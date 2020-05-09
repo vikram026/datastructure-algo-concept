@@ -187,7 +187,7 @@ public class Heap {
 	private static int findMaxFromMinHeap(Integer[] heap) {
 		//int n=heap.length;
 		int max=Integer.MIN_VALUE;
-		for(int i=n/2;i<n;i++) {
+		for(int i=(n+1)/2;i<n;i++) {
 			if(heap[i]>max)
 				max=heap[i];
 			

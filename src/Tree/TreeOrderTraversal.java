@@ -237,7 +237,7 @@ public class TreeOrderTraversal {
 	private static boolean isCompleteBinary(Node root,int index, int noOfNodes) {
 		if(root==null) return true;
 		if(index>noOfNodes) return false;
-		return (isCompleteBinary(root.left, 2*index+1, noOfNodes) && isCompleteBinary(root.right, 2*index+1, noOfNodes));
+		return (isCompleteBinary(root.left, 2*index+1, noOfNodes) && isCompleteBinary(root.right, 2*index+2, noOfNodes));
 	}
 
 	private static int countNoOfNodes(Node root) {

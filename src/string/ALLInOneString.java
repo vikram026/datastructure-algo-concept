@@ -17,7 +17,7 @@ public class ALLInOneString {
 		String s = "abaabcdefgfgddfh";
 		char[] charArray = s.toCharArray();
 		String[] string= {"a"};
-		int st=Math.a
+		//int st=Math.a
 		int[] ad=Stream.of(string).mapToInt(Integer::parseInt).toArray();
 		//forEach(e->System.out.print(e));
 		System.out.println(

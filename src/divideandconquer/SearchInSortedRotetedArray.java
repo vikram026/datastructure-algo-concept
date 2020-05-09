@@ -21,6 +21,10 @@ public class SearchInSortedRotetedArray {
             if(nums[mid]==target)
                 return mid;
             
+            //if right side is in increasing order and target falls in between them 
+            //or left side is in increasing order and target doesn't falls in between 
+            //go to right supart other wise go to left subpart;
+            
             if( (nums[mid]<nums[e] && nums[mid]<target && target<=nums[e])
               || (nums[mid]>=nums[s] && (target<nums[s] ||  target>nums[mid]  ) ) ){
                 return searchUtils(nums,target,mid+1,e);

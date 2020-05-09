@@ -1,12 +1,15 @@
 package arrays;
 
 import java.util.Stack;
-
+//find the maximum area;
 public class HistogramLargestArea {
 	public static void main(String[] args) {
-		int[] hist= {5,6};
-		int max=getMaxArea(hist);
-		System.out.println("Maximum Area in the Histogram is ->  "+max);
+//		int[] hist= {5,3};
+//		int max=getMaxArea(hist);
+		
+		int n=17;
+		int x=n<<1;
+		System.out.println("Maximum Area in the Histogram is ->  "+x);
 	}
 
 	private static int getMaxArea(int[] hist) {
@@ -20,12 +23,15 @@ public class HistogramLargestArea {
 			else {
 				top=stack.pop();
 				area_with_top=hist[top]*(stack.isEmpty()?i:(i-stack.peek()-1));
+				System.out.print(area_with_top+" ");
 				max_area=Math.max(max_area, area_with_top );
 			}
 		}
 		while(!stack.empty()) {
 			top=stack.pop();
 			area_with_top=hist[top]*(stack.isEmpty()?i:(i-stack.peek()-1));
+			System.out.print(area_with_top+" ");
+
 			max_area=Math.max(max_area, area_with_top );			
 		}
 		return max_area;

@@ -10,10 +10,15 @@ public class SubArrayWithGivenSum {
 	     int t,n,sum,end=0,subSum=0,flag=0;
 	     int start=0;
 	     int[] a;
+	     System.out.println("Enter no of test cases");
 	     t=sc.nextInt();
 	     while(t-->0){
 	         start=0;end=0;flag=0; subSum=0;
+		     System.out.println("Enter size of array");
+
 	         n=sc.nextInt();
+		     System.out.println("Enter sum value to be calculated");
+
 	         sum=sc.nextInt();
 	         a=new int[n];
 	         for(int i=0;i<n;i++)

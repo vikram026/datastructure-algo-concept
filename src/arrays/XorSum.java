@@ -7,7 +7,7 @@ public class XorSum {
 		System.out.println(res+" ");	
 	}
 	private static void printAllSubset() {
-		int n
+		int n=3;
 		for(int i=0;i<1<<n;i++) {
 			System.out.println();
 			for(int j=0;j<=n;j++) {

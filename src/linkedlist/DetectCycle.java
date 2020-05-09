@@ -20,20 +20,28 @@ public class DetectCycle {
 		head=insert(head,3);
 		head=insert(head,4);
 		head=insert(head,5);
-		//head=insert(head,6);
-		
-	
-		//head.next.next.next.next.next.next=head.next.next.next;
-		int k=4;
-		head=makeLoop(head,k);
-		boolean b=detectCycle(head);
-		System.out.println("Is there cycle?"+b);
-		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Remove Node ");
+//		//head=insert(head,6);
+//		
+//	
+//		//head.next.next.next.next.next.next=head.next.next.next;
 //		int k=4;
 //		head=makeLoop(head,k);
-		Node node=removeTheLoop(head);
-		 b=detectCycle(head);
-		 System.out.println("Is there cycle?"+b);
+//		boolean b=detectCycle(head);
+//		System.out.println("Is there cycle?"+b);
+//		System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Remove Node ");
+////		int k=4;
+////		head=makeLoop(head,k);
+//		Node node=removeTheLoop(head);
+//		 b=detectCycle(head);
+//		 System.out.println("Is there cycle?"+b);
+		
+		
+		ReverseOrder rev=new ReverseOrder();
+		rev.reorderlist(head);
+		while(head!=null) {
+			System.out.print(head.data+" ");
+			head=head.next;
+		}
 		 
 		
 		
