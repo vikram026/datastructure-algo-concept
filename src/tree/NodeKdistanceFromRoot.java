@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 public class NodeKdistanceFromRoot {
 	public static void main(String[] args) {

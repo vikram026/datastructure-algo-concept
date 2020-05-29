@@ -3,7 +3,7 @@ package advance.datastructure;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LRU {
+public class LRU{
 	static Map<Integer,Node> map=new HashMap<>();
 	static Node front=null, rear=null;
 

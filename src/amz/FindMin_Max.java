@@ -6,6 +6,6 @@ class OverloadingCalculation3{
 	    
 	  public static void main(String args[]){    
 	  OverloadingCalculation3 obj=new OverloadingCalculation3();    
-	  obj.sum(20,20);//now ambiguity    
+	  obj.sum(20,20l);//now ambiguity
 	  }    
 	}   

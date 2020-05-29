@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 public class SumTree
 {
 	boolean isSumTree(Node node)
@@ -14,7 +14,7 @@ public class SumTree
 }
 
 //using sum return;
-class Tree
+ class Tree
 {
     boolean isSum=true;
 	boolean isSumTree(Node node)
@@ -54,33 +54,33 @@ class Tree
 
 //using boolean only returning;
 
-class Tree
-{
-    boolean isSum=true;
-	boolean isSumTree(Node node)
-	{   int l,r;
-	    //if(node==null)return 0;
-	    if(node==null|| (node.left==null && node.right==null))
-	        return true;
-	    if(isSumTree(node.left) &&isSumTree(node.right)){
-    	    if(isLeaf(node.left))
-    	       l= node.left.data;
-    	    else
-    	      l=node.left!=null?2*node.left.data:0;
-    	    if(isLeaf(node.right))
-    	        r=node.right.data;
-    	    else
-    	      r=node.right!=null?2*node.right.data:0;
-
-    	   //System.out.print(node.data+" l: "+ l+" r: "+r+"||");
-    
-    	    return node.data==l+r;
-	    }
-	    return false;
-	}
-
-	boolean isLeaf(Node node){
-	    return (node!=null && node.left==null && node.right==null);
-	    
-	}
-}
+//class Tree
+//{
+//    boolean isSum=true;
+//	boolean isSumTree(Node node)
+//	{   int l,r;
+//	    //if(node==null)return 0;
+//	    if(node==null|| (node.left==null && node.right==null))
+//	        return true;
+//	    if(isSumTree(node.left) &&isSumTree(node.right)){
+//    	    if(isLeaf(node.left))
+//    	       l= node.left.data;
+//    	    else
+//    	      l=node.left!=null?2*node.left.data:0;
+//    	    if(isLeaf(node.right))
+//    	        r=node.right.data;
+//    	    else
+//    	      r=node.right!=null?2*node.right.data:0;
+//
+//    	   //System.out.print(node.data+" l: "+ l+" r: "+r+"||");
+//
+//    	    return node.data==l+r;
+//	    }
+//	    return false;
+//	}
+//
+//	boolean isLeaf(Node node){
+//	    return (node!=null && node.left==null && node.right==null);
+//
+//	}
+//}

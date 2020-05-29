@@ -36,8 +36,6 @@ public class DetectCycle {
 			if(slow==fast)
 				return true;			
 		}
-
-		
 		return false;
 	}
 

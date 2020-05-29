@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -8,7 +8,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Test {
 	public static void main(String[] args) {
@@ -32,7 +31,7 @@ public class Test {
 		Set<String> treeSet=new TreeSet<>();
 	
 		Map<String,Object> map=new HashMap<>();
-		//map.entrySet().stream().collect(Collectors.toMap
+		//corejava.map.entrySet().stream().collect(Collectors.toMap
 		
 		
 	

@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 public class ArrayRepresentationOfTree {
 	static int N=10;

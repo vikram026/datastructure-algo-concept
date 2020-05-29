@@ -1,9 +1,4 @@
-package Tree;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Stack;
+package tree;
 
 
 public class ExpressionTreeWithPrefix {

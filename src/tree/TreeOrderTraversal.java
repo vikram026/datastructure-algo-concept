@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Stack;
-import java.util.stream.Stream;
 
 public class TreeOrderTraversal {
 	static int min=Integer.MAX_VALUE;

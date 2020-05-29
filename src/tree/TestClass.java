@@ -1,4 +1,4 @@
-package Tree;
+package tree;
 import java.io.*;
 import java.util.*;
 import java.util.stream.Collectors; 
