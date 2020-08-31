@@ -88,7 +88,7 @@ public class TreeOrderTraversal {
 		System.out.println("&&&&&&&&&&&&&&&&&&&&&&  Print Right View Of the Binary Tree ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		maxLevel=-1;
 		printRightView(root,0);
-		System.out.println("&&&&&&&&&&&&&&&&&&&&&&  remove all Path of length K Of the Binary Tree ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+		System.out.println("&&&&&&&&&&&&&&&&&&&&&&  remove all Path of length K or less then K Of the Binary Tree ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
 		int k=3;
 		Node removedTreeroot=removePath(root1,k,1);
 		//Node removedTreeroot1=removePath1(root1,k);

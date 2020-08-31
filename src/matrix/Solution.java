@@ -20,11 +20,10 @@ public class Solution {
 	        	System.out.println();
 
 	        }
-		   for(int i=0;i<4;i++){
-			   System.out.print(a[i]+" ");
-		   }
 	}
-    public static  int countSquares(int[][] matrix) {
+	
+	//using pigeon hole principle;
+    public static  int countSquares1(int[][] matrix) {
         int m=matrix.length;
         if(m==0) return 0;
         int n=matrix[0].length;
@@ -40,12 +39,36 @@ public class Solution {
             }
             
         }
+        for(int i=0;i<4;i++){
+          System.out.print(a[i]+" ");
+        }
+        // using pigeonhole principle.
         int i=1;
         int count=0;
         while(i<4&& a[i]!=0){
-            count+=a[i];
+            count+=a[i]*i;
             i++;
         }
         return count;
     }
+    
+    
+    
+    public static int countSquares(int[][] matrix) {
+      int res=0;
+      if(matrix==null) return res; 
+      int m=matrix.length;
+      if(m==0)return res;
+      
+      int n=matrix[0].length;
+      for(int i=0;i<m;i++)
+          for(int j=0;j<n;j++){
+              if(i!=0 &&  j!=0 && matrix[i][j]==1)
+                  matrix[i][j]=Math.min(Math.min(matrix[i-1][j],matrix[i][j-1]),matrix[i-1][j-1])+1;
+              res+=matrix[i][j];
+              
+          }
+      
+      return res;
+  }
 }

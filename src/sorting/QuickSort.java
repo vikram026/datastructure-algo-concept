@@ -2,12 +2,18 @@ package sorting;
 
 public class QuickSort {
 	public static void main(String[] args) {
-		int[] a= {9,6,5,0,8,2,4,7};
+		int[] a= {9,6,5,0,8,2,4,7,0};
 		quickSort(a,0,a.length-1);
-		for(int i=0;i<a.length;i++) {
-			System.out.print(a[i]+" ");
-		}
+		print(a);
 	}
+
+  private static void print(int[] a) {
+    for(int i=0;i<a.length;i++) {
+			System.out.print(a[i]+" ");
+	}
+    System.out.println();
+    
+  }
 
 	private static void quickSort(int[] a, int low, int high) {
 		if(low<high) {
@@ -23,12 +29,13 @@ public class QuickSort {
 		for(int j=low;j<high;j++) {
 			if(a[j]<x) {
 				i++;
-				swap(a,i,j);
+				if(i!=j)
+				 swap(a,i,j);
 			}
 		}
 		i++;
 		swap(a,i,high);
-		
+		print(a); //step by step printing;
 		return i;
 	}
 

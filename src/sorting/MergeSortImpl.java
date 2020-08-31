@@ -8,7 +8,7 @@ public class MergeSortImpl {
 		int[] a= { 3,6,5,4,7,8,90,54,67,87 };
 		ms.mergeSort(a,0,a.length-1);
 		for(int i=0;i<a.length;i++) {
-			System.out.println(a[i]+" ");
+			System.out.print(a[i]+" ");
 
 		}
 	}

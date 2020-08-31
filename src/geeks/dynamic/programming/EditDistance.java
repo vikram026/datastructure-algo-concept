@@ -1,6 +1,34 @@
 package geeks.dynamic.programming;
+
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.stream.Collectors;
+
 //editDistance...
 public class EditDistance {
+  
+  
+  class Solution {
+    int k=0;
+    public int[][] kClosest(int[][] points, int K) {
+         int n=points.length;
+          Map<Integer,int[]> map= new HashMap<>();
+          
+         for(int i=0;i<n;i++){
+             int x=points[i][0];
+             int y=points[i][1];
+             map.put((x*x)+(y*y),points[i]);
+         }
+         int[][] res=new int[K][2];
+         
+         map.entrySet().stream().sorted(Map.Entry.comparingByKey()).limit(K).forEach(e->{
+           res[k++][0]=e.getValue()[0];
+           res[k++][1]=e.getValue()[1];
+         });
+         return res;
+    }
+}
 
 	public static void main(String[] args) {
 		

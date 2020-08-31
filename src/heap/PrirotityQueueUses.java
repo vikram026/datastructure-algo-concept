@@ -1,9 +1,39 @@
 package heap;
 
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class PrirotityQueueUses {
+  
+  class Solution {
+    int k=0;
+    public int[][] kClosest(int[][] points, int K) {
+     PriorityQueue<int[]> pq=new PriorityQueue<>((p,q)->(q[0]*q[0]+q[1]*q[1])-(p[0]*p[0]+p[1]*p[1]));
+        int n=points.length;
+        for(int i=0;i<n;i++){ 
+            if(i<K)
+                pq.add(points[i]);
+            else{
+               int[] top= pq.peek();
+               if((top[0]*top[0]+top[1]*top[1])>(points[i][0]*points[i][0]+points[i][1]*points[i][1])){
+                   pq.poll();
+                   pq.add(points[i]);
+               }
+            }
+        }
+        int[][] res=new int[K][2];
+        while(!pq.isEmpty()) {
+          int[] temp=pq.poll();
+          res[k][0]=temp[0];
+          res[k++][1]=temp[1];
+          
+        }
+       return  res;
+        
+        
+    }
+}
 	public static void main(String[] args) {
 		int[] arr= {2,7,4,1,8,1};
 		PriorityQueue<Integer> pqmin=createMinHeap(arr);
@@ -25,6 +55,7 @@ public class PrirotityQueueUses {
 	private static PriorityQueue<Integer> createMaxHeap(int[] arr) {
 		PriorityQueue<Integer> pq=new PriorityQueue<> ((a,b)->b-a); //creating max heap using;
 		//using Comparator.reverseOrder()  or ((a,b)->b-a)
+		
 		for(int e:arr)
             pq.add(e);
 		return pq;

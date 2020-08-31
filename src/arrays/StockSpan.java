@@ -25,6 +25,6 @@ public class StockSpan {
 		}
 		
 		stack=null;
-	}
+	} 
 
 }

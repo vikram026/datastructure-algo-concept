@@ -2,7 +2,7 @@ package tree;
 
 import java.util.Arrays;
 
-public class BTToBST {
+public class BTtoBST {
 	static int count=0;
 	public static void main(String[] args) {
 		Node binaryTree=createBinaryTree();

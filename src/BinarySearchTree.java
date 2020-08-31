@@ -93,7 +93,6 @@ public class BinarySearchTree {
 	}
 	
 	public static Node insert(Node root,int data){
-		System.out.println(" insert called "+data);
 		if(root==null) {
 			root=new Node(data);
 			return root;
@@ -193,6 +192,7 @@ public class BinarySearchTree {
 //		preOrder(root);
 		System.out.println("\nInorder Traversal");
 		inOrder(root);
+		dfsSearch(root);
 //		System.out.println("\nNo Of Node: "+countNode(root));
 //		System.out.println("\nsumOfNodeData: "+sumOfNodeData(root));
 //		System.out.println("\ndepthOfTree/Max Level of the Tree : "+(depthOfTree(root)-1));

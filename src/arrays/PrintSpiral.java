@@ -2,7 +2,7 @@ package arrays;
 import java.util.*;
 import java.lang.*;
 import java.io.*;
-public class GFG
+public class PrintSpiral
  {
 	public static void main (String[] args)
 	 {

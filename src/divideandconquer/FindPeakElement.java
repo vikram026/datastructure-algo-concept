@@ -8,15 +8,6 @@ public class FindPeakElement {
 		//int peak= findPeakIndex(a,0,a.length-1);
 		System.out.println("peak index is"+peak);
 	}
-
-	private static int findPeakIndex(int[] a, int l, int r) {
-		
-		if(l<r) {
-			
-		}
-		return 0;
-	}
-
 }
 class Solution {
     int n;

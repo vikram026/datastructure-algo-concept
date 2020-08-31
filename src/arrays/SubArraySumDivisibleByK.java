@@ -6,6 +6,14 @@ public class SubArraySumDivisibleByK {
 	 * [7,4,-10]
 		K=5	
 	 */
+  
+  public static void main(String[] args) {
+    int[] a= {7,-10};
+    int K=5;
+    SubArraySumDivisibleByK subArraySumDivisibleByK=new SubArraySumDivisibleByK();
+    int count=subArraySumDivisibleByK.subarraysDivByK(a,K);
+    System.out.println("\n"+count);
+  }
 	
 	
 	public int subarraysDivByK(int[] A, int K) {

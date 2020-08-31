@@ -2,7 +2,15 @@ package heap;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
+//time complexity O(n) space complexity O(1)
+/**
+ * max no of node and height h= n/(pow(2,h+1)) 
+ * 
+ * so complexity=  sum(h=0,1,2...log(n))=  n/(pow(2,h+1)) * O(h)    =>   O(n)
+ * 
+ * @author vksingh
+ *
+ */
 public class Heap {
 	static int n;
 	public static void main(String[] args) {

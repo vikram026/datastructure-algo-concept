@@ -4,12 +4,9 @@ import java.util.Stack;
 //find the maximum area;
 public class HistogramLargestArea {
 	public static void main(String[] args) {
-//		int[] hist= {5,3};
-//		int max=getMaxArea(hist);
-		
-		int n=17;
-		int x=n<<1;
-		System.out.println("Maximum Area in the Histogram is ->  "+x);
+		int[] hist= {5,3};
+		int max=getMaxArea(hist);
+		System.out.println("Maximum Area in the Histogram is ->  "+max);
 	}
 
 	private static int getMaxArea(int[] hist) {
